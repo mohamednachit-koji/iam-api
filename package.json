@@ -7,7 +7,7 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "build:client": "cd client && yarn build",
-    "start": "nest start",
+    "start": "nest build && node dist/index",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/index",
